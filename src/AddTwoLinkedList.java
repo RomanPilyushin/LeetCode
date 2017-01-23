@@ -22,7 +22,7 @@ public class AddTwoLinkedList {
 
     }
 
-    public static AddTwoLinkedList addTwoNumbers(AddTwoLinkedList list1, AddTwoLinkedList list2) {
+    private static AddTwoLinkedList addTwoNumbers(AddTwoLinkedList list1, AddTwoLinkedList list2) {
         if (list1 == null && list2 == null) return null;
         else if (list1 == null || list2 == null) return list1 == null ? list2 : list1;
 
@@ -31,9 +31,9 @@ public class AddTwoLinkedList {
         return intToList(numberList1 + numberList2);
     }
 
-    Node head;
+    private Node head;
 
-    class Node {
+    private class Node {
         int data;
         Node next;
         Node(int d) {data = d; next = null; }
